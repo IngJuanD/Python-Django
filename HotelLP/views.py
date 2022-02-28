@@ -10,6 +10,7 @@ from HotelLP.models import Habitacion, Plan
 def inicio(request):
     return render(request,"inicio.html")
 
+#Save the dates of form web
 def reserva(request):
     data={
         'form':ReservaForm()
