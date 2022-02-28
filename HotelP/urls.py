@@ -23,7 +23,7 @@ from HotelP.settings import MEDIA_ROOT, MEDIA_URL
 
 
 
-
+#agregar las paginas
 urlpatterns = [
     path('admin/', admin.site.urls),
     path ('inicio/',inicio),
