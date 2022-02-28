@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block contet %}
+
+
+<article>
+    <h2>LOGIN ADMIN</h2>
+    <table class="tblogin">
+
+        <form action="" id="formularioAD" method="post">
+
+            {% csrf_token %}
+
+            {{ form }}
+
+            <button type="submit" id="btnLogin">INGRESAR</button>
+
+        </form>
+    </table>
+    {{ mensaje }}
+</article>
+
+
+<aside class="publicid">
+    <h2>Banner de publicidad</h2>
+    <h2><a href="">
+        <img src="" width="50%">
+    </a></h2>
+    <h3>Testimonios</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, reiciendis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+</aside>
+
+{% endblock  %}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block contet %}
+
+<article>
+    <h2>HABITACIONES</h2>
+    <table border="" class="tbHabitacion" >
+
+        <tr class="tituloPlanes">
+    
+            <th>Habitacion</th>
+            <th>Capcidad</th>
+            <th>Descripcion</th>
+            <th>Foto</th>
+            
+        </tr>
+        {% for i in habitacion %}
+    
+        <tr class="datosPlanes">
+            <td>{{i.id_hb}}</td>
+            <td>{{i.capacidad}}</td>
+            <td>{{i.descripcion_hb}}</td>
+            <td><img src="{{i.foto.url}}" "></td>
+            
+            
+        </tr>       
+    
+        {% endfor %}
+    </table>
+</article>
+
+<aside class="publicid">
+    <h2>Banner de publicidad</h2>
+    <h2><a href="">
+        <img src="" width="50%">
+    </a></h2>
+    <h3>Testimonios</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, reiciendis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+</aside>
+
+{% endblock  %}

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block contet %}
+
+
+    <article>
+        <h2>PLANES</h2>
+        <table border="" class="formPlanes" >
+
+            <tr class="tituloPlanes">
+        
+                <th>Id Plan</th>
+                <th>Nombre Plan</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                
+            </tr>
+            {% for i in plan %}
+        
+            <tr class="datosPlanes">
+                <td>{{i.id_plan}}</td>
+                <td>{{i.nombre_plan}}</td>
+                <td>{{i.descripcion_plan}}</td>
+                <td>${{i.precio}}</td>
+                
+            </tr>       
+        
+            {% endfor %}
+        </table>
+    </article>
+
+
+
+
+<aside class="publicid">
+    <h2>Banner de publicidad</h2>
+    <h2><a href="">
+        <img src="" width="50%">
+    </a></h2>
+    <h3>Testimonios</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, reiciendis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+</aside>
+
+{% endblock  %}
