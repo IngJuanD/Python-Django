@@ -3,6 +3,7 @@ from django.contrib import admin
 # Register your models here.
 from HotelLP.models import Cliente, Contacto, Habitacion, Plan, Reserva
 
+#mostrar en la base de datos
 class ClienteAdmin(admin.ModelAdmin):
     list_display=("identificacion_cl","nombre_cl","apellido_cl")
     search_fields=("identificacion_cl","nombre_cl","apellido_cl")
